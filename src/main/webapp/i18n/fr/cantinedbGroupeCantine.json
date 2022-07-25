@@ -1,0 +1,29 @@
+{
+  "gatewaydbApp": {
+    "cantinedbGroupeCantine": {
+      "home": {
+        "title": "GroupeCantines",
+        "createLabel": "Créer un nouveau Groupe Cantine",
+        "createOrEditLabel": "Créer ou éditer un Groupe Cantine",
+        "notFound": "Aucun Groupe Cantine trouvé"
+      },
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Groupe Cantine {{ id }} ?"
+      },
+      "detail": {
+        "title": "Groupe Cantine"
+      },
+      "nom": "Nom",
+      "nombreEleves": "Nombre Eleves",
+      "etat": "Etat",
+      "cantine": "Cantine"
+    }
+  },
+  "cantinedbApp": {
+    "cantinedbGroupeCantine": {
+      "created": "Un nouveau Groupe Cantine a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Groupe Cantine avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Groupe Cantine avec l'identifiant {{ param }} a été supprimé"
+    }
+  }
+}

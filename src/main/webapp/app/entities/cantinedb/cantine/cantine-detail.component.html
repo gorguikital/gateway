@@ -1,0 +1,60 @@
+<!--
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="cantine">
+            <h2><span jhiTranslate="gatewaydbApp.cantinedbCantine.detail.title">Cantine</span> {{ cantine.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="gatewaydbApp.cantinedbCantine.libelle">Libelle</span></dt>
+                <dd>
+                    <span>{{ cantine.libelle }}</span>
+                </dd>
+                <dt><span jhiTranslate="gatewaydbApp.cantinedbCantine.nombreGroupe">Nombre Groupe</span></dt>
+                <dd>
+                    <span>{{ cantine.nombreGroupe }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/cantine', cantine.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
+-->
+
+<div *ngIf="cantine">
+<div class="card border-dark" style="max-width: 40rem; margin-left: 100px">
+    <div class="card-header bg-dark"><span style="font-size: large;font-weight: bold;color: white">Détail cantine :</span> <span style="font-size: x-large;font-weight: bold;color: white">{{ cantine.libelle }}</span></div>
+    <div class="card-body" style="justify-content: center">
+        <span style="font-weight: bold;font-size: large">Libellé :</span> <span>{{cantine.libelle }}</span><br>
+        <span style="font-weight: bold;font-size: large">NombreG :</span> <span>{{ cantine.nombreGroupe }}</span>
+    </div>
+    <div style="margin-left: 250px">
+        <button type="submit"
+                (click)="previousState()"
+                class="btn btn-info">
+            <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button type="button"
+                [routerLink]="['/cantine', cantine.id, 'edit']"
+                class="btn btn-primary">
+            <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+        </button>
+    </div>
+</div>
+</div>
+

@@ -1,0 +1,9 @@
+{
+  "gatewaydbApp": {
+    "Status": {
+      "null": "",
+      "INSCRIT": "INSCRIT",
+      "NONINSCRIT": "NONINSCRIT"
+    }
+  }
+}

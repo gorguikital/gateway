@@ -1,0 +1,66 @@
+<!--<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="groupeCantine">
+            <h2><span jhiTranslate="gatewaydbApp.cantinedbGroupeCantine.detail.title">Groupe Cantine</span> {{ groupeCantine.id }}</h2><hr>
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="gatewaydbApp.cantinedbGroupeCantine.nom">Nom :</span></dt>
+                <dd>
+                    <span>{{ groupeCantine.nom }}</span>
+                </dd>
+                <dt><span jhiTranslate="gatewaydbApp.cantinedbGroupeCantine.nombreEleves">Nombre Eleves :</span></dt>
+                <dd>
+                    <span>{{ groupeCantine.nombreEleves }}</span>
+                </dd>
+                <dt><span jhiTranslate="gatewaydbApp.cantinedbGroupeCantine.etat">Etat :</span></dt>
+                    <span>{{ groupeCantine.etat }}</span>
+                <dt><span jhiTranslate="gatewaydbApp.cantinedbGroupeCantine.cantine">Cantine :</span></dt>
+                <dd>
+                    <div *ngIf="groupeCantine.cantineId">
+                        <a [routerLink]="['/cantine', groupeCantine.cantineId, 'view']">{{ groupeCantine.cantineId }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/groupe-cantine', groupeCantine.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>-->
+<div *ngIf="groupeCantine">
+<div class="card border-dark" style="max-width: 40rem; margin-left: 100px">
+    <div class="card-header bg-dark"><span style="font-size: large;font-weight: bold;color: white">Groupe Cantine</span> <span style="font-size: x-large;font-weight: bold;color: white">{{ groupeCantine.id }}</span></div>
+    <div class="card-body">
+        <span style="font-weight: bold;font-size: large">Nom :</span> <span>{{ groupeCantine.nom }}</span><br>
+        <span style="font-weight: bold;font-size: large">NombreE :</span> <span>{{ groupeCantine.nombreEleves }}</span><br>
+        <span style="font-weight: bold;font-size: large">Etat :</span> <span>{{ groupeCantine.etat }}</span><br>
+        <span style="font-weight: bold;font-size: large">Cantine :</span>
+        <span *ngIf="groupeCantine.cantineId">
+            <a [routerLink]="['/cantine', groupeCantine.cantineId, 'view']">{{ groupeCantine.cantineId }}</a>
+        </span>
+    </div>
+    <div style="margin-left: 250px">
+        <button type="submit"
+                (click)="previousState()"
+                class="btn btn-info">
+            <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button type="button"
+                [routerLink]="['/groupe-cantine', groupeCantine.id, 'edit']"
+                class="btn btn-primary">
+            <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+        </button>
+    </div>
+</div>
+</div>

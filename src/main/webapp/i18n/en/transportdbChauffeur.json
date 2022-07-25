@@ -1,0 +1,31 @@
+{
+  "gatewaydbApp": {
+    "transportdbChauffeur": {
+      "home": {
+        "title": "Chauffeurs",
+        "createLabel": "Create a new Chauffeur",
+        "createOrEditLabel": "Create or edit a Chauffeur",
+        "notFound": "No Chauffeurs found"
+      },
+      "delete": {
+        "question": "Are you sure you want to delete Chauffeur {{ id }}?"
+      },
+      "detail": {
+        "title": "Chauffeur"
+      },
+      "nom": "Nom",
+      "prenom": "Prenom",
+      "dateNaiss": "Date Naiss",
+      "lieuNaiss": "Lieu Naiss",
+      "adresse": "Adresse",
+      "telephone": "Telephone"
+    }
+  },
+  "transportdbApp": {
+    "transportdbChauffeur": {
+      "created": "A new Chauffeur is created with identifier {{ param }}",
+      "updated": "A Chauffeur is updated with identifier {{ param }}",
+      "deleted": "A Chauffeur is deleted with identifier {{ param }}"
+    }
+  }
+}

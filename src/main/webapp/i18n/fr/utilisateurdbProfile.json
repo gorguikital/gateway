@@ -1,0 +1,28 @@
+{
+  "gatewaydbApp": {
+    "utilisateurdbProfile": {
+      "home": {
+        "title": "Profiles",
+        "createLabel": "Créer un nouveau Profile",
+        "createOrEditLabel": "Créer ou éditer un Profile",
+        "notFound": "Aucun Profile trouvé"
+      },
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Profile {{ id }} ?"
+      },
+      "detail": {
+        "title": "Profile"
+      },
+      "libelle": "Libelle",
+      "description": "Description",
+      "utilisateur": "Utilisateur"
+    }
+  },
+  "utilisateurdbApp": {
+    "utilisateurdbProfile": {
+      "created": "Un nouveau Profile a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Profile avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Profile avec l'identifiant {{ param }} a été supprimé"
+    }
+  }
+}

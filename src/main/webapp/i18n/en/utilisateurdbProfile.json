@@ -1,0 +1,28 @@
+{
+  "gatewaydbApp": {
+    "utilisateurdbProfile": {
+      "home": {
+        "title": "Profiles",
+        "createLabel": "Create a new Profile",
+        "createOrEditLabel": "Create or edit a Profile",
+        "notFound": "No Profiles found"
+      },
+      "delete": {
+        "question": "Are you sure you want to delete Profile {{ id }}?"
+      },
+      "detail": {
+        "title": "Profile"
+      },
+      "libelle": "Libelle",
+      "description": "Description",
+      "utilisateur": "Utilisateur"
+    }
+  },
+  "utilisateurdbApp": {
+    "utilisateurdbProfile": {
+      "created": "A new Profile is created with identifier {{ param }}",
+      "updated": "A Profile is updated with identifier {{ param }}",
+      "deleted": "A Profile is deleted with identifier {{ param }}"
+    }
+  }
+}

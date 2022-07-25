@@ -2,7 +2,8 @@
   "generator-jhipster": {
     "promptValues": {
       "packageName": "com.ucad.memoire.kital",
-      "nativeLanguage": "fr"
+      "nativeLanguage": "fr",
+      "microservicePath": "../microservice-Inscription"
     },
     "jhipsterVersion": "6.10.5",
     "applicationType": "gateway",

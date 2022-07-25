@@ -1,0 +1,35 @@
+{
+  "gatewaydbApp": {
+    "utilisateurdbUtilisateur": {
+      "home": {
+        "title": "Utilisateurs",
+        "createLabel": "Create a new Utilisateur",
+        "createOrEditLabel": "Create or edit a Utilisateur",
+        "notFound": "No Utilisateurs found"
+      },
+      "delete": {
+        "question": "Are you sure you want to delete Utilisateur {{ id }}?"
+      },
+      "detail": {
+        "title": "Utilisateur"
+      },
+      "nom": "Nom",
+      "prenom": "Prenom",
+      "sexe": "Sexe",
+      "telephone": "Telephone",
+      "adresse": "Adresse",
+      "cin": "Cin",
+      "email": "Email",
+      "password": "Password",
+      "service": "Service",
+      "profile": "Profile"
+    }
+  },
+  "utilisateurdbApp": {
+    "utilisateurdbUtilisateur": {
+      "created": "A new Utilisateur is created with identifier {{ param }}",
+      "updated": "A Utilisateur is updated with identifier {{ param }}",
+      "deleted": "A Utilisateur is deleted with identifier {{ param }}"
+    }
+  }
+}

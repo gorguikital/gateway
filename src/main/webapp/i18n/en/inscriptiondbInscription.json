@@ -1,0 +1,30 @@
+{
+  "gatewaydbApp": {
+    "inscriptiondbInscription": {
+      "home": {
+        "title": "Inscriptions",
+        "createLabel": "Create a new Inscription",
+        "createOrEditLabel": "Create or edit a Inscription",
+        "notFound": "No Inscriptions found"
+      },
+      "delete": {
+        "question": "Are you sure you want to delete Inscription {{ id }}?"
+      },
+      "detail": {
+        "title": "Inscription"
+      },
+      "dateInscription": "Date Inscription",
+      "status": "Status",
+      "idClasse": "Id Classe",
+      "annee": "Annee",
+      "eleve": "Eleve"
+    }
+  },
+  "inscriptiondbApp": {
+    "inscriptiondbInscription": {
+      "created": "A new Inscription is created with identifier {{ param }}",
+      "updated": "A Inscription is updated with identifier {{ param }}",
+      "deleted": "A Inscription is deleted with identifier {{ param }}"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<form *ngIf="groupeCantine" name="deleteForm" (ngSubmit)="confirmDelete(groupeCantine?.id!)">
+
+    <div class="modal-header">
+        <h4 class="modal-title" jhiTranslate="entity.delete.title" style="margin: auto;font-weight: bold">Confirm delete operation</h4>
+    </div>
+
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <p id="jhi-delete-groupeCantine-heading" jhiTranslate="gatewaydbApp.cantinedbGroupeCantine.delete.question"  [translateValues]="{ id: groupeCantine.nom }">Are you sure you want to delete this Groupe Cantine ?</p>
+    </div>
+
+    <div class="modal-footer" style="justify-content: center">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="cancel()">
+            <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="jhi-confirm-delete-groupeCantine" type="submit" class="btn btn-danger">
+            <fa-icon icon="times"></fa-icon>&nbsp;<span jhiTranslate="entity.action.delete">Delete</span>
+        </button>
+    </div>
+</form>
